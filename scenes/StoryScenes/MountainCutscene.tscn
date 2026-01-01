@@ -12,16 +12,16 @@ script/source = "extends Node3D
 @onready var dialogScene: Control = $DialogScene
 
 var DIALOG: Array[DialogOption] = [
-	DialogOption.new(DialogOption.DIALOG_ENTITY.NARRATOR, \"As you stand triumphantly upon the mountain range, a second angel suddenly appears to you.\"),
+	DialogOption.new(DialogOption.DIALOG_ENTITY.NARRATOR, \"As you stand triumphantly atop the mountain range, a second angel suddenly appears before you.\"),
 	DialogOption.new(DialogOption.DIALOG_ENTITY.ENEMY, \"Ah, how the mighty have fallen. My brother… reduced to this?\"),
 	DialogOption.new(DialogOption.DIALOG_ENTITY.NARRATOR, \"He gazes down upon you, his many many eyes a mix of disdain and sorrow.\"),
 	DialogOption.new(DialogOption.DIALOG_ENTITY.ENEMY, \"But such things are of little consequence now.\"),
 	DialogOption.new(DialogOption.DIALOG_ENTITY.ENEMY, \"I have come to return you to the pit from whence you crawled, ensuring you are never to trouble this world again.\"),
-	DialogOption.new(DialogOption.DIALOG_ENTITY.PLAYER, \"(This cannot be happening - the rift is starting to close i have time for this!)\"),
-	DialogOption.new(DialogOption.DIALOG_ENTITY.PLAYER, \"'You’re quite confident, considering I just defeated your brother mere seconds ago.'\"),
+	DialogOption.new(DialogOption.DIALOG_ENTITY.PLAYER, \"(This cannot be happening - the rift is starting to close! I have no time for this.)\"),
+	DialogOption.new(DialogOption.DIALOG_ENTITY.PLAYER, \"You’re quite confident, considering I just defeated your brother mere seconds ago.\"),
 	DialogOption.new(DialogOption.DIALOG_ENTITY.NARRATOR, \"The angel lets out a shrill, roaring screech, ancient and echoing like the sound of distant chimes.\"),
 	DialogOption.new(DialogOption.DIALOG_ENTITY.NARRATOR, \"His expression hardens, his eyes gleaming with divine wrath.\"),
-	DialogOption.new(DialogOption.DIALOG_ENTITY.ENEMY, \"Thy end, is upon you.\"),
+	DialogOption.new(DialogOption.DIALOG_ENTITY.ENEMY, \"Thy end is upon you.\"),
 	DialogOption.new(DialogOption.DIALOG_ENTITY.NARRATOR, \"The air around you grows heavy, as if the heavens themselves bear down upon your very soul. 
 You begin to feel the crushing pressure radiating from the angel, but instead of fear, a dark grin spreads across your face.\"),
 DialogOption.new(DialogOption.DIALOG_ENTITY.NARRATOR, \"FIGHT!\")

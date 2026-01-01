@@ -9,7 +9,7 @@ script/source = "extends Control
 @onready var dialogScene: Control = $DialogScene
 
 var DIALOG: Array[DialogOption] = [
-DialogOption.new(DialogOption.DIALOG_ENTITY.NARRATOR, \"Satan congured the world!\"),
+DialogOption.new(DialogOption.DIALOG_ENTITY.NARRATOR, \"Satan conquers the world!\"),
 ]
 
 # Called when the node enters the scene tree for the first time.

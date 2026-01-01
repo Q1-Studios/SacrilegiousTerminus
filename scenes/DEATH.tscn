@@ -16,7 +16,7 @@ DialogOption.new(DialogOption.DIALOG_ENTITY.NARRATOR, \"As time slips through yo
 	DialogOption.new(DialogOption.DIALOG_ENTITY.PLAYER, \"No... this cannot be! I was so close... I could feel his power... his presence...\"),
 	DialogOption.new(DialogOption.DIALOG_ENTITY.NARRATOR, \"But the rift is gone, and with it, any hope of fulfilling your dark purpose. The world has been spared once again.\"),
 	DialogOption.new(DialogOption.DIALOG_ENTITY.NARRATOR, \"Yet the cost of your failure is heavy, and you are left to wander, a broken shadow of the servant you once aspired to be.\"),
-	DialogOption.new(DialogOption.DIALOG_ENTITY.NARRATOR, \"In a world full of peace - you of all people are nothing, but a hollow husk of a once glorious warrior.\"),	
+	DialogOption.new(DialogOption.DIALOG_ENTITY.NARRATOR, \"In a world full of peace, you of all people are nothing but the hollow husk of a once glorious warrior.\"),	
 	DialogOption.new(DialogOption.DIALOG_ENTITY.NARRATOR, \"Game over.\")
 ]
 

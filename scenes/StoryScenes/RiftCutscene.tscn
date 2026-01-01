@@ -10,7 +10,7 @@ script/source = "extends Node3D
 @onready var dialogScene: Control = $DialogScene
 
 var DIALOG: Array[DialogOption] = [
-		DialogOption.new(DialogOption.DIALOG_ENTITY.NARRATOR, \"Battle after battle, you stand strong, at the edge of the glowing rift, its unholy energy pulsating with increasing intensity.\"),
+		DialogOption.new(DialogOption.DIALOG_ENTITY.NARRATOR, \"Battle after battle, you stand strong. You arrive at the edge of the glowing rift, its unholy energy pulsating with increasing intensity.\"),
 	DialogOption.new(DialogOption.DIALOG_ENTITY.NARRATOR, \"The world around you trembles violently, the rift growing in anticipation of your presence.\"),
 	DialogOption.new(DialogOption.DIALOG_ENTITY.PLAYER, \"This is it. The moment I was destined for. The doorway between realms... and the key to Satan's return.
 I must complete the ritual.\"),
