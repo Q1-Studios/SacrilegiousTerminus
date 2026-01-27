@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dfj7crbv06vkm"]
+[gd_scene format=3 uid="uid://dfj7crbv06vkm"]
 
 [ext_resource type="Script" uid="uid://xbmyo7puhqh" path="res://code/tutorial_main_menu.gd" id="1_wfwg7"]
 [ext_resource type="Theme" uid="uid://8pxr3vfc2jme" path="res://scenes/MainMenu/MenuTheme.tres" id="2_8n6of"]
@@ -6,10 +6,10 @@
 [ext_resource type="PackedScene" uid="uid://d0uw87hj0h1b8" path="res://scenes/MainMenu/tutorialText.tscn" id="3_s0w2m"]
 [ext_resource type="PackedScene" uid="uid://cuw4yq5y387x7" path="res://scenes/mouse_hider.tscn" id="5_r65fp"]
 
-[node name="TutorialLayer" type="CanvasLayer"]
+[node name="TutorialLayer" type="CanvasLayer" unique_id=1890520803]
 script = ExtResource("1_wfwg7")
 
-[node name="Background" type="ColorRect" parent="."]
+[node name="Background" type="ColorRect" parent="." unique_id=226267859]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -17,7 +17,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.882353)
 
-[node name="DialogContainer" type="CenterContainer" parent="."]
+[node name="DialogContainer" type="CenterContainer" parent="." unique_id=1370962724]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -25,31 +25,31 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_8n6of")
 
-[node name="DialogBox" type="VBoxContainer" parent="DialogContainer"]
+[node name="DialogBox" type="VBoxContainer" parent="DialogContainer" unique_id=201621691]
 z_index = 1
 custom_minimum_size = Vector2(1920, 1080)
 layout_mode = 2
 
-[node name="ScrollContainer" type="ScrollContainer" parent="DialogContainer/DialogBox"]
+[node name="ScrollContainer" type="ScrollContainer" parent="DialogContainer/DialogBox" unique_id=2051056967]
 custom_minimum_size = Vector2(944, 400)
 layout_mode = 2
 size_flags_vertical = 3
 horizontal_scroll_mode = 0
 
-[node name="PanelContainer" type="PanelContainer" parent="DialogContainer/DialogBox/ScrollContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="DialogContainer/DialogBox/ScrollContainer" unique_id=2131475948]
 custom_minimum_size = Vector2(944, 470)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="TutorialLabel" parent="DialogContainer/DialogBox/ScrollContainer/PanelContainer" instance=ExtResource("3_s0w2m")]
+[node name="TutorialLabel" parent="DialogContainer/DialogBox/ScrollContainer/PanelContainer" unique_id=1524916027 instance=ExtResource("3_s0w2m")]
 layout_mode = 2
 
-[node name="Button" parent="DialogContainer/DialogBox" instance=ExtResource("2_nepck")]
+[node name="Button" parent="DialogContainer/DialogBox" unique_id=790071614 instance=ExtResource("2_nepck")]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Alright, got it"
 
-[node name="MouseHider" parent="." instance=ExtResource("5_r65fp")]
+[node name="MouseHider" parent="." unique_id=1553756030 instance=ExtResource("5_r65fp")]
 
 [connection signal="pressed" from="DialogContainer/DialogBox/Button" to="." method="_on_back_to_menu_btn_pressed"]

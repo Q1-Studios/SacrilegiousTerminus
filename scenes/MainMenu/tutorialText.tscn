@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://d0uw87hj0h1b8"]
+[gd_scene format=3 uid="uid://d0uw87hj0h1b8"]
 
 [ext_resource type="Theme" uid="uid://8pxr3vfc2jme" path="res://scenes/MainMenu/MenuTheme.tres" id="1_4yfah"]
 
@@ -8,7 +8,7 @@ content_margin_top = 10.0
 content_margin_right = 10.0
 content_margin_bottom = 10.0
 
-[node name="TutorialLabel" type="RichTextLabel"]
+[node name="TutorialLabel" type="RichTextLabel" unique_id=1710404889]
 z_index = 10
 offset_right = 1920.0
 offset_bottom = 1080.0

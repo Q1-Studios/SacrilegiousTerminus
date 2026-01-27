@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://clyl60ed8hapa"]
+[gd_scene format=3 uid="uid://clyl60ed8hapa"]
 
 [ext_resource type="PackedScene" uid="uid://dgurl1u1gb0ly" path="res://scenes/DialogScene.tscn" id="1_ayubt"]
 [ext_resource type="Texture2D" uid="uid://b3frq2g06mlbx" path="res://assets/sprites/protag/protagonist.png" id="2_k22er"]
@@ -38,15 +38,15 @@ func _on_dialog_scene_dialog_completed() -> void:
 	SceneManager.change_scene(SceneManager.theMountain, true)
 "
 
-[node name="MountainCutscene" type="Node3D"]
+[node name="MountainCutscene" type="Node3D" unique_id=245156675]
 script = SubResource("GDScript_uv2tw")
 
-[node name="DialogScene" parent="." instance=ExtResource("1_ayubt")]
+[node name="DialogScene" parent="." unique_id=1861720102 instance=ExtResource("1_ayubt")]
 player = ExtResource("2_k22er")
 enemy = ExtResource("3_hqlv2")
 background = ExtResource("4_aqnbr")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1615592381]
 stream = ExtResource("5_l74ol")
 autoplay = true
 parameters/looping = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://nukwwpr5axtc"]
+[gd_scene format=3 uid="uid://nukwwpr5axtc"]
 
 [ext_resource type="PackedScene" uid="uid://dgurl1u1gb0ly" path="res://scenes/DialogScene.tscn" id="1_mjeo2"]
 [ext_resource type="Texture2D" uid="uid://b2n213s6icibw" path="res://assets/sprites/cutscenebackgrounds/bg4.jpg" id="2_07t7d"]
@@ -31,13 +31,13 @@ func _on_dialog_scene_dialog_completed() -> void:
 	SceneManager.change_scene(SceneManager.thRift, true)
 "
 
-[node name="RiftCutscene" type="Node3D"]
+[node name="RiftCutscene" type="Node3D" unique_id=210309643]
 script = SubResource("GDScript_fu138")
 
-[node name="DialogScene" parent="." instance=ExtResource("1_mjeo2")]
+[node name="DialogScene" parent="." unique_id=1838271578 instance=ExtResource("1_mjeo2")]
 background = ExtResource("2_07t7d")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1555495526]
 stream = ExtResource("3_32x8c")
 autoplay = true
 parameters/looping = true

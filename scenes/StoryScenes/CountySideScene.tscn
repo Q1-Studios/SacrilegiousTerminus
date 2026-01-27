@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://caddljvqemfkx"]
+[gd_scene format=3 uid="uid://caddljvqemfkx"]
 
 [ext_resource type="PackedScene" uid="uid://dgurl1u1gb0ly" path="res://scenes/DialogScene.tscn" id="1_5gvbm"]
 [ext_resource type="Texture2D" uid="uid://b3frq2g06mlbx" path="res://assets/sprites/protag/protagonist.png" id="2_0r7u8"]
@@ -35,16 +35,16 @@ func _on_dialog_scene_dialog_completed() -> void:
 	SceneManager.change_scene(SceneManager.theCountrySide, true)
 "
 
-[node name="CountySideScene" type="Node3D"]
+[node name="CountySideScene" type="Node3D" unique_id=602537452]
 script = SubResource("GDScript_7xsqi")
 
-[node name="DialogScene" parent="." instance=ExtResource("1_5gvbm")]
+[node name="DialogScene" parent="." unique_id=1105780061 instance=ExtResource("1_5gvbm")]
 script = ExtResource("2_cfj3l")
 player = ExtResource("2_0r7u8")
 enemy = ExtResource("3_o75ml")
 background = ExtResource("4_pje5e")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1202327418]
 stream = ExtResource("6_gnrbc")
 autoplay = true
 parameters/looping = true

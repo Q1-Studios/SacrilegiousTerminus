@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cey20murtyiss"]
+[gd_scene format=3 uid="uid://cey20murtyiss"]
 
 [ext_resource type="PackedScene" uid="uid://ceft1i1qvo4fl" path="res://scenes/SpellCastWheel/MainMenuWhell.tscn" id="1_ewt1t"]
 [ext_resource type="AudioStream" uid="uid://2pf5cga2akch" path="res://assets/music/loading_loop.ogg" id="2_fi0y8"]
@@ -93,12 +93,12 @@ _data = {
 &"spiiin": SubResource("Animation_gjay3")
 }
 
-[node name="MainMenu" type="Node3D"]
+[node name="MainMenu" type="Node3D" unique_id=319327724]
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="Camera3D" type="Camera3D" parent="." unique_id=998866705]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1.898, -0.249)
 
-[node name="WebQuitInfo" type="ColorRect" parent="Camera3D"]
+[node name="WebQuitInfo" type="ColorRect" parent="Camera3D" unique_id=1660702648]
 visible = false
 anchors_preset = 15
 anchor_right = 1.0
@@ -107,7 +107,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
-[node name="Label" type="Label" parent="Camera3D/WebQuitInfo"]
+[node name="Label" type="Label" parent="Camera3D/WebQuitInfo" unique_id=303337654]
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
@@ -116,48 +116,46 @@ text = "The game has been quit. Reload the tab to restart it."
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ManualWheel" parent="." node_paths=PackedStringArray("webQuitInfo") instance=ExtResource("1_ewt1t")]
+[node name="ManualWheel" parent="." unique_id=1562002994 node_paths=PackedStringArray("webQuitInfo") instance=ExtResource("1_ewt1t")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.035, 0, -0.5)
 webQuitInfo = NodePath("../Camera3D/WebQuitInfo")
 
-[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=2061271029]
 stream = ExtResource("2_fi0y8")
 volume_db = -8.0
 autoplay = true
 parameters/looping = true
 
-[node name="Chevron" type="MeshInstance3D" parent="."]
+[node name="Chevron" type="MeshInstance3D" parent="." unique_id=1721636031]
 transform = Transform3D(-2.05444e-08, 0, 0.47, 0, 0.47, 0, -0.47, 0, -2.05444e-08, -0.04, -0.625, 0.78)
 mesh = ExtResource("3_o50ab")
 surface_material_override/0 = SubResource("ShaderMaterial_f280o")
 
-[node name="Chevron2" type="MeshInstance3D" parent="."]
+[node name="Chevron2" type="MeshInstance3D" parent="." unique_id=1461697940]
 transform = Transform3D(-2.3167e-08, 0, 0.53, 0, 0.53, 0, -0.53, 0, -2.3167e-08, -0.04, -0.68, 0.78)
 mesh = ExtResource("3_o50ab")
 surface_material_override/0 = SubResource("StandardMaterial3D_ynxxo")
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1512149475]
 environment = SubResource("Environment_7gu80")
 camera_attributes = SubResource("CameraAttributesPractical_w2ypg")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="WorldEnvironment"]
-libraries = {
-&"": SubResource("AnimationLibrary_qs2vt")
-}
-autoplay = "spiiin"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="WorldEnvironment" unique_id=1999644006]
+libraries/ = SubResource("AnimationLibrary_qs2vt")
+autoplay = &"spiiin"
 
-[node name="PrallaxLayer1" type="Sprite3D" parent="."]
+[node name="PrallaxLayer1" type="Sprite3D" parent="." unique_id=1379025819]
 transform = Transform3D(7.545, 0, 0, 0, -0.390667, 7.53488, 0, -7.53488, -0.390667, -0.637, -34.101, 19.052)
 modulate = Color(0.442911, 0.442911, 0.442911, 1)
 texture = ExtResource("7_lxc0g")
 
-[node name="PrallaxLayer3" type="Sprite3D" parent="."]
+[node name="PrallaxLayer3" type="Sprite3D" parent="." unique_id=1030072884]
 transform = Transform3D(3.74, 0, 0, 0, -0.19365, 3.73498, 0, -3.73498, -0.19365, 2.91, -13.538, 12.279)
 modulate = Color(0.442911, 0.442911, 0.442911, 1)
 texture = ExtResource("9_vunlc")
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1608555833]
 transform = Transform3D(0.285, 0, 0, 0, -1.24577e-08, -0.285, 0, 0.285, -1.24577e-08, 0, -0.769345, 1.05762)
 texture = ExtResource("8_vjx6n")
 
-[node name="MouseHider" parent="." instance=ExtResource("10_mqas3")]
+[node name="MouseHider" parent="." unique_id=671220596 instance=ExtResource("10_mqas3")]

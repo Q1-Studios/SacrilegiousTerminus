@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://r020t5g1merr"]
+[gd_scene format=3 uid="uid://r020t5g1merr"]
 
 [ext_resource type="Texture2D" uid="uid://cch2xm4os4imv" path="res://assets/sprites/tarot symbole/tarotGlow/Plus.png" id="1_yiow4"]
 
@@ -49,7 +49,7 @@ distance_fade_mode = 1
 material = SubResource("StandardMaterial3D_oq7o2")
 size = Vector2(3, 0.3)
 
-[node name="GPUParticles3D" type="GPUParticles3D"]
+[node name="GPUParticles3D" type="GPUParticles3D" unique_id=1725497759]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.426009, 0, -1.2062)
 amount = 2500
 trail_lifetime = 0.79

@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=7 format=3 uid="uid://8pxr3vfc2jme"]
+[gd_resource type="Theme" format=3 uid="uid://8pxr3vfc2jme"]
 
 [ext_resource type="FontFile" uid="uid://nmqwlr0d5ra7" path="res://assets/fonts/NotoSansSymbols-SemiBold.ttf" id="1_t36tk"]
 
@@ -20,6 +20,7 @@ spacing_bottom = -13
 
 [sub_resource type="SystemFont" id="SystemFont_6g3ks"]
 fallbacks = Array[Font]([SubResource("FontVariation_t36tk")])
+subpixel_positioning = 0
 
 [resource]
 Button/font_sizes/font_size = 32

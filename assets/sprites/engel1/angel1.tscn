@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://ccvejgfug7j0b"]
+[gd_scene format=3 uid="uid://ccvejgfug7j0b"]
 
 [ext_resource type="ArrayMesh" uid="uid://cq72vxlrkxxre" path="res://assets/sprites/engel1/michi.obj" id="1_0vq5b"]
 [ext_resource type="Material" uid="uid://pc6up2rjq71h" path="res://assets/sprites/engel1/michiwingmaterial.tres" id="2_c0l4j"]
@@ -164,8 +164,8 @@ tracks/5/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nbprq"]
 _data = {
-"RESET": SubResource("Animation_7iw27"),
-"michifly": SubResource("Animation_26bx6")
+&"RESET": SubResource("Animation_7iw27"),
+&"michifly": SubResource("Animation_26bx6")
 }
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_0c5ld"]
@@ -176,32 +176,30 @@ stream_2/stream = ExtResource("7_c6a7u")
 stream_3/stream = ExtResource("8_2j88m")
 stream_4/stream = ExtResource("9_ncj2c")
 
-[node name="Angel1" type="Node3D"]
+[node name="Angel1" type="Node3D" unique_id=1130988482]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0219596)
 
-[node name="Michi" type="MeshInstance3D" parent="."]
+[node name="Michi" type="MeshInstance3D" parent="." unique_id=43819936]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0655926, 0, 0.3157)
 mesh = ExtResource("1_0vq5b")
 surface_material_override/0 = ExtResource("2_c0l4j")
 
-[node name="Michi2" type="MeshInstance3D" parent="Michi"]
-transform = Transform3D(0.865816, 2.18716e-08, 0.500363, -2.18716e-08, 1, -5.86537e-09, -0.500363, -5.86541e-09, 0.865816, -0.502689, -0.149177, -0.28435)
+[node name="Michi2" type="MeshInstance3D" parent="Michi" unique_id=39117204]
+transform = Transform3D(0.8658159, 2.1871589e-08, 0.5003631, -2.1871605e-08, 1, -5.8653713e-09, -0.5003631, -5.86541e-09, 0.8658159, -0.502689, -0.149177, -0.28435)
 mesh = ExtResource("1_0vq5b")
 skeleton = NodePath("../..")
 surface_material_override/0 = ExtResource("3_2gjwf")
 
-[node name="Michi3" type="MeshInstance3D" parent="Michi"]
+[node name="Michi3" type="MeshInstance3D" parent="Michi" unique_id=736681091]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.186322, -0.149177, -0.28435)
 mesh = ExtResource("1_0vq5b")
 skeleton = NodePath("../..")
 surface_material_override/0 = ExtResource("4_kotxs")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_nbprq")
-}
-autoplay = "michifly"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1461900687]
+libraries/ = SubResource("AnimationLibrary_nbprq")
+autoplay = &"michifly"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1338591440]
 stream = SubResource("AudioStreamRandomizer_0c5ld")
 autoplay = true

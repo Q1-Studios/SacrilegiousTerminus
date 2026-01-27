@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://o142xdjjr58r"]
+[gd_scene format=3 uid="uid://o142xdjjr58r"]
 
 [ext_resource type="PackedScene" uid="uid://dqtcwmca5ongg" path="res://scenes/SpellCastWheel/AutomaticWheel.tscn" id="1_6ietl"]
 [ext_resource type="Script" uid="uid://c7p1qjb2mys2y" path="res://code/creditsController.gd" id="1_d66vi"]
@@ -41,128 +41,128 @@ emission = Color(0.913585, 0.632952, 0.817147, 1)
 [sub_resource type="QuadMesh" id="QuadMesh_qxcsx"]
 material = SubResource("StandardMaterial3D_482rq")
 
-[node name="Credits" type="Node3D"]
+[node name="Credits" type="Node3D" unique_id=29940981]
 script = ExtResource("1_d66vi")
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1380155277]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0373757, 1.18043)
 
-[node name="OmniLight3D" type="OmniLight3D" parent="."]
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1771919458]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.12685, 0, -18.6174)
 light_color = Color(0.334808, 0.48532, 0.915553, 1)
 light_energy = 15.83
 light_size = 0.47
 omni_range = 14.5395
 
-[node name="Node3D7" type="Node3D" parent="."]
+[node name="Node3D7" type="Node3D" parent="." unique_id=159868169]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.31359, -1.60797, 5.11077)
 
-[node name="Sprite3D" type="Sprite3D" parent="Node3D7"]
+[node name="Sprite3D" type="Sprite3D" parent="Node3D7" unique_id=440611364]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.28144, 1.61479, -27.8262)
 pixel_size = 0.02
 texture = ExtResource("1_op6y3")
 
-[node name="Node3D" type="Node3D" parent="Node3D7"]
+[node name="Node3D" type="Node3D" parent="Node3D7" unique_id=1311637101]
 transform = Transform3D(0.5, -0.866025, 0, 0.866025, 0.5, 0, 0, 0, 1, 1.31631, 1.54394, -9.10636)
 
-[node name="Portar" parent="Node3D7/Node3D" instance=ExtResource("1_6ietl")]
+[node name="Portar" parent="Node3D7/Node3D" unique_id=72325783 instance=ExtResource("1_6ietl")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 3, 0, 0)
 color = Color(0.623849, 0, 0.067877, 1)
 
-[node name="Sprite3D" type="Sprite3D" parent="Node3D7/Node3D"]
+[node name="Sprite3D" type="Sprite3D" parent="Node3D7/Node3D" unique_id=305888636]
 transform = Transform3D(0.1, 0.173205, 0, -0.173205, 0.1, 0, 0, 0, 0.2, 2.8, 0.0216375, 0.394646)
 pixel_size = 0.02
 texture = ExtResource("2_7etpv")
 
-[node name="Node3D2" type="Node3D" parent="Node3D7"]
+[node name="Node3D2" type="Node3D" parent="Node3D7" unique_id=300426554]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.31631, 1.54394, -9.10636)
 
-[node name="SEAL" parent="Node3D7/Node3D2" instance=ExtResource("1_6ietl")]
+[node name="SEAL" parent="Node3D7/Node3D2" unique_id=1200027299 instance=ExtResource("1_6ietl")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 3, 0, 0)
 color = Color(0.0699787, 0.428226, 0, 1)
 
-[node name="Sprite3D" type="Sprite3D" parent="Node3D7/Node3D2"]
+[node name="Sprite3D" type="Sprite3D" parent="Node3D7/Node3D2" unique_id=99695681]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 2.8, 0.00108188, 0.394646)
 pixel_size = 0.02
 texture = ExtResource("3_5jc48")
 
-[node name="Node3D3" type="Node3D" parent="Node3D7"]
+[node name="Node3D3" type="Node3D" parent="Node3D7" unique_id=244344095]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.31631, 1.54394, -9.10636)
 
-[node name="Tobi" parent="Node3D7/Node3D3" instance=ExtResource("1_6ietl")]
+[node name="Tobi" parent="Node3D7/Node3D3" unique_id=21943677 instance=ExtResource("1_6ietl")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 3, 0, 0)
 color = Color(0.985349, 0.676673, 1.15514e-06, 1)
 
-[node name="Sprite3D" type="Sprite3D" parent="Node3D7/Node3D3"]
+[node name="Sprite3D" type="Sprite3D" parent="Node3D7/Node3D3" unique_id=6256332]
 transform = Transform3D(-0.2, 0, -1.74846e-08, 0, 0.2, 0, 1.74846e-08, 0, -0.2, 2.8, 0.020556, -0.394673)
 pixel_size = 0.02
 texture = ExtResource("4_r876j")
 
-[node name="Node3D4" type="Node3D" parent="Node3D7"]
+[node name="Node3D4" type="Node3D" parent="Node3D7" unique_id=1200325330]
 transform = Transform3D(-0.5, 0.866025, 0, -0.866025, -0.5, 0, 0, 0, 1, 1.31631, 1.54394, -9.10636)
 
-[node name="Phil" parent="Node3D7/Node3D4" instance=ExtResource("1_6ietl")]
+[node name="Phil" parent="Node3D7/Node3D4" unique_id=1979513526 instance=ExtResource("1_6ietl")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 3, 0, 0)
 color = Color(0.913725, 0.537255, 0.109804, 1)
 
-[node name="Sprite3D" type="Sprite3D" parent="Node3D7/Node3D4"]
+[node name="Sprite3D" type="Sprite3D" parent="Node3D7/Node3D4" unique_id=1552430262]
 transform = Transform3D(-0.1, -0.173205, 0, 0.173205, -0.1, 0, 0, 0, 0.2, 2.8, -0.0216376, 0.394646)
 pixel_size = 0.02
 texture = ExtResource("5_xt0lb")
 
-[node name="Node3D5" type="Node3D" parent="Node3D7"]
+[node name="Node3D5" type="Node3D" parent="Node3D7" unique_id=2036681305]
 transform = Transform3D(0.5, 0.866025, 0, -0.866025, 0.5, 0, 0, 0, 1, 1.31631, 1.54394, -9.10636)
 
-[node name="SESI" parent="Node3D7/Node3D5" instance=ExtResource("1_6ietl")]
+[node name="SESI" parent="Node3D7/Node3D5" unique_id=347004847 instance=ExtResource("1_6ietl")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 3, 0, 0)
 color = Color(0.618809, 0.405192, 0.963639, 1)
 
-[node name="Sprite3D" type="Sprite3D" parent="Node3D7/Node3D5"]
+[node name="Sprite3D" type="Sprite3D" parent="Node3D7/Node3D5" unique_id=728414991]
 transform = Transform3D(0.1, -0.173205, 0, 0.173205, 0.1, 0, 0, 0, 0.2, 2.8, -0.00108153, 0.394646)
 pixel_size = 0.02
 texture = ExtResource("6_852ui")
 
-[node name="Node3D6" type="Node3D" parent="Node3D7"]
+[node name="Node3D6" type="Node3D" parent="Node3D7" unique_id=1383554573]
 transform = Transform3D(-0.5, -0.866025, 0, 0.866025, -0.5, 0, 0, 0, 1, 1.31631, 1.54394, -9.10636)
 
-[node name="Elias" parent="Node3D7/Node3D6" instance=ExtResource("1_6ietl")]
+[node name="Elias" parent="Node3D7/Node3D6" unique_id=637980112 instance=ExtResource("1_6ietl")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 3, 0, 0)
 color = Color(0.341176, 0.788235, 0.482353, 1)
 
-[node name="Sprite3D" type="Sprite3D" parent="Node3D7/Node3D6"]
+[node name="Sprite3D" type="Sprite3D" parent="Node3D7/Node3D6" unique_id=1100197161]
 transform = Transform3D(-0.1, 0.173205, 0, -0.173205, -0.1, 0, 0, 0, 0.2, 2.8, 0.020556, 0.394646)
 pixel_size = 0.02
 texture = ExtResource("7_4k6x1")
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1847230347]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.2006, -2.16138, -9.64984)
 texture = ExtResource("8_oxmqa")
 
-[node name="Sprite3D2" type="Sprite3D" parent="."]
+[node name="Sprite3D2" type="Sprite3D" parent="." unique_id=2051631048]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6512, -2.62828, -8.67043)
 texture = ExtResource("9_gcilu")
 
-[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=1173686055]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.905532, 6.75178, -3.37543)
 amount = 1000
 lifetime = 2.64
 process_material = SubResource("ParticleProcessMaterial_x7cx1")
 draw_pass_1 = SubResource("QuadMesh_qxcsx")
 
-[node name="PrallaxLayer1" type="Sprite3D" parent="."]
+[node name="PrallaxLayer1" type="Sprite3D" parent="." unique_id=1331071815]
 transform = Transform3D(7.545, 0, 0, 0, 7.545, 0, 0, 0, 7.545, -0.637, -6.30289, -32.4547)
 modulate = Color(0.442911, 0.442911, 0.442911, 1)
 texture = ExtResource("11_n5ltc")
 
-[node name="PrallaxLayer3" type="Sprite3D" parent="."]
+[node name="PrallaxLayer3" type="Sprite3D" parent="." unique_id=675862955]
 transform = Transform3D(3.74, 0, 0, 0, 3.74, 0, 0, 0, 3.74, 2.91, -14.4933, -26.1662)
 modulate = Color(0.442911, 0.442911, 0.442911, 1)
 texture = ExtResource("12_vducm")
 
-[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=1312074617]
 stream = ExtResource("15_ag0ue")
 volume_db = -12.0
 autoplay = true
 parameters/looping = true
 
-[node name="MouseHider" parent="." instance=ExtResource("16_a31w8")]
+[node name="MouseHider" parent="." unique_id=1003989879 instance=ExtResource("16_a31w8")]

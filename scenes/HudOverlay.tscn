@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://dvygun7k256ji"]
+[gd_scene format=3 uid="uid://dvygun7k256ji"]
 
 [ext_resource type="Script" uid="uid://cejra01sesexs" path="res://code/hudOverlay.gd" id="1_nlpga"]
 [ext_resource type="PackedScene" uid="uid://cuw4yq5y387x7" path="res://scenes/mouse_hider.tscn" id="2_4haxn"]
@@ -67,7 +67,7 @@ border_color = Color(1, 1, 1, 1)
 expand_margin_left = 12.0
 expand_margin_right = 12.0
 
-[node name="HudOverlay" type="Control"]
+[node name="HudOverlay" type="Control" unique_id=285427601]
 process_mode = 3
 layout_mode = 3
 anchors_preset = 15
@@ -77,14 +77,14 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_nlpga")
 
-[node name="MouseHider" parent="." instance=ExtResource("2_4haxn")]
+[node name="MouseHider" parent="." unique_id=872771282 instance=ExtResource("2_4haxn")]
 
-[node name="DialogLayer" type="CanvasLayer" parent="."]
+[node name="DialogLayer" type="CanvasLayer" parent="." unique_id=138417013]
 unique_name_in_owner = true
 visible = false
 script = ExtResource("2_p562y")
 
-[node name="DialogLabel" type="Label" parent="DialogLayer"]
+[node name="DialogLabel" type="Label" parent="DialogLayer" unique_id=1785012050]
 unique_name_in_owner = true
 anchors_preset = -1
 anchor_left = 0.5
@@ -104,17 +104,17 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_mc56r")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="NarratorAudio" type="AudioStreamPlayer" parent="DialogLayer"]
+[node name="NarratorAudio" type="AudioStreamPlayer" parent="DialogLayer" unique_id=1912779429]
 unique_name_in_owner = true
 stream = ExtResource("3_o5wnl")
 
-[node name="PlayerVoiceAudio" type="AudioStreamPlayer" parent="DialogLayer"]
+[node name="PlayerVoiceAudio" type="AudioStreamPlayer" parent="DialogLayer" unique_id=637270248]
 stream = ExtResource("4_nda3g")
 
-[node name="EnemyVoiceAudio" type="AudioStreamPlayer" parent="DialogLayer"]
+[node name="EnemyVoiceAudio" type="AudioStreamPlayer" parent="DialogLayer" unique_id=726787995]
 stream = ExtResource("5_oijn2")
 
-[node name="BackgroundLabel" type="Label" parent="DialogLayer"]
+[node name="BackgroundLabel" type="Label" parent="DialogLayer" unique_id=927120461]
 visible = false
 z_index = -2
 anchors_preset = 15
@@ -125,11 +125,11 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = SubResource("StyleBoxFlat_6rxup")
 
-[node name="IngameLayer" type="CanvasLayer" parent="."]
+[node name="IngameLayer" type="CanvasLayer" parent="." unique_id=870300026]
 unique_name_in_owner = true
 visible = false
 
-[node name="FightProgressBar" type="TextureProgressBar" parent="IngameLayer"]
+[node name="FightProgressBar" type="TextureProgressBar" parent="IngameLayer" unique_id=901298855]
 unique_name_in_owner = true
 anchors_preset = 1
 anchor_left = 1.0
@@ -144,7 +144,7 @@ texture_under = ExtResource("6_5qawj")
 texture_progress = ExtResource("8_ynm7x")
 script = SubResource("GDScript_covti")
 
-[node name="TimerLabel" type="Label" parent="IngameLayer"]
+[node name="TimerLabel" type="Label" parent="IngameLayer" unique_id=671689793]
 unique_name_in_owner = true
 anchors_preset = -1
 anchor_left = 0.01
@@ -158,15 +158,15 @@ text = "0:00:00"
 label_settings = SubResource("LabelSettings_86xpp")
 script = SubResource("GDScript_7wjds")
 
-[node name="PauseButton" parent="IngameLayer" instance=ExtResource("8_rg1go")]
+[node name="PauseButton" parent="IngameLayer" unique_id=150333673 instance=ExtResource("8_rg1go")]
 position = Vector2(1868, 1020)
 
-[node name="TutorialLayer" type="CanvasLayer" parent="."]
+[node name="TutorialLayer" type="CanvasLayer" parent="." unique_id=1517992423]
 unique_name_in_owner = true
 visible = false
 script = ExtResource("8_rd4og")
 
-[node name="Background" type="ColorRect" parent="TutorialLayer"]
+[node name="Background" type="ColorRect" parent="TutorialLayer" unique_id=1273187676]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -174,7 +174,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.882353)
 
-[node name="DialogContainer" type="CenterContainer" parent="TutorialLayer"]
+[node name="DialogContainer" type="CenterContainer" parent="TutorialLayer" unique_id=1396545596]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -182,37 +182,37 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("10_rg1go")
 
-[node name="DialogBox" type="VBoxContainer" parent="TutorialLayer/DialogContainer"]
+[node name="DialogBox" type="VBoxContainer" parent="TutorialLayer/DialogContainer" unique_id=1667075482]
 z_index = 1
 custom_minimum_size = Vector2(1920, 1080)
 layout_mode = 2
 
-[node name="ScrollContainer" type="ScrollContainer" parent="TutorialLayer/DialogContainer/DialogBox"]
+[node name="ScrollContainer" type="ScrollContainer" parent="TutorialLayer/DialogContainer/DialogBox" unique_id=1618912968]
 layout_mode = 2
 size_flags_vertical = 3
 horizontal_scroll_mode = 0
 
-[node name="PanelContainer" type="PanelContainer" parent="TutorialLayer/DialogContainer/DialogBox/ScrollContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="TutorialLayer/DialogContainer/DialogBox/ScrollContainer" unique_id=880236792]
 custom_minimum_size = Vector2(944, 470)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="TutorialLabel2" parent="TutorialLayer/DialogContainer/DialogBox/ScrollContainer/PanelContainer" instance=ExtResource("11_qerle")]
+[node name="TutorialLabel2" parent="TutorialLayer/DialogContainer/DialogBox/ScrollContainer/PanelContainer" unique_id=638226559 instance=ExtResource("11_qerle")]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="GotItBtn" parent="TutorialLayer/DialogContainer/DialogBox" instance=ExtResource("10_ly6oa")]
+[node name="GotItBtn" parent="TutorialLayer/DialogContainer/DialogBox" unique_id=1678537927 instance=ExtResource("10_ly6oa")]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Alright, got it"
 
-[node name="PauseMenuLayer" type="CanvasLayer" parent="."]
+[node name="PauseMenuLayer" type="CanvasLayer" parent="." unique_id=1671874515]
 unique_name_in_owner = true
 visible = false
 script = ExtResource("9_ompl7")
 
-[node name="Background" type="ColorRect" parent="PauseMenuLayer"]
+[node name="Background" type="ColorRect" parent="PauseMenuLayer" unique_id=1276580768]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -220,7 +220,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.882353)
 
-[node name="DialogContainer" type="CenterContainer" parent="PauseMenuLayer"]
+[node name="DialogContainer" type="CenterContainer" parent="PauseMenuLayer" unique_id=1184012437]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -228,13 +228,13 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("10_rg1go")
 
-[node name="DialogBox" type="Panel" parent="PauseMenuLayer/DialogContainer"]
+[node name="DialogBox" type="Panel" parent="PauseMenuLayer/DialogContainer" unique_id=2032277585]
 z_index = 1
 custom_minimum_size = Vector2(960, 400)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_tsvbg")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenuLayer/DialogContainer/DialogBox"]
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenuLayer/DialogContainer/DialogBox" unique_id=858924146]
 layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
@@ -246,7 +246,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 16
 
-[node name="MenuTitle" type="Label" parent="PauseMenuLayer/DialogContainer/DialogBox/VBoxContainer"]
+[node name="MenuTitle" type="Label" parent="PauseMenuLayer/DialogContainer/DialogBox/VBoxContainer" unique_id=880934176]
 z_index = 10
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
@@ -254,18 +254,18 @@ text = "Paused Game"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ResumeBtn" parent="PauseMenuLayer/DialogContainer/DialogBox/VBoxContainer" instance=ExtResource("10_ly6oa")]
+[node name="ResumeBtn" parent="PauseMenuLayer/DialogContainer/DialogBox/VBoxContainer" unique_id=1597869458 instance=ExtResource("10_ly6oa")]
 unique_name_in_owner = true
 layout_mode = 2
 focus_neighbor_bottom = NodePath("../TutorialBtn")
 
-[node name="TutorialBtn" parent="PauseMenuLayer/DialogContainer/DialogBox/VBoxContainer" instance=ExtResource("10_ly6oa")]
+[node name="TutorialBtn" parent="PauseMenuLayer/DialogContainer/DialogBox/VBoxContainer" unique_id=1556031491 instance=ExtResource("10_ly6oa")]
 layout_mode = 2
 focus_neighbor_top = NodePath("../ResumeBtn")
 focus_neighbor_bottom = NodePath("../MainMenuBtn")
 text = "Show Tutorial"
 
-[node name="MainMenuBtn" parent="PauseMenuLayer/DialogContainer/DialogBox/VBoxContainer" instance=ExtResource("10_ly6oa")]
+[node name="MainMenuBtn" parent="PauseMenuLayer/DialogContainer/DialogBox/VBoxContainer" unique_id=1866672318 instance=ExtResource("10_ly6oa")]
 layout_mode = 2
 focus_neighbor_top = NodePath("../TutorialBtn")
 text = "Back to Main Menu

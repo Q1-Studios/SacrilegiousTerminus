@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bbqw6wj7d55e"]
+[gd_scene format=3 uid="uid://bbqw6wj7d55e"]
 
 [ext_resource type="PackedScene" uid="uid://dgurl1u1gb0ly" path="res://scenes/DialogScene.tscn" id="1_nn72u"]
 [ext_resource type="Texture2D" uid="uid://cbatqhg6u1i6m" path="res://assets/sprites/cutscenebackgrounds/youlose.jpg" id="2_db0x7"]
@@ -29,7 +29,7 @@ func _on_dialog_scene_dialog_completed() -> void:
 	SceneManager.change_scene(SceneManager.mainMenuSene, true)
 "
 
-[node name="Death" type="Control"]
+[node name="Death" type="Control" unique_id=769434541]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -38,11 +38,11 @@ grow_horizontal = 2
 grow_vertical = 2
 script = SubResource("GDScript_rsjad")
 
-[node name="DialogScene" parent="." instance=ExtResource("1_nn72u")]
+[node name="DialogScene" parent="." unique_id=131008163 instance=ExtResource("1_nn72u")]
 layout_mode = 1
 background = ExtResource("2_db0x7")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2005724331]
 stream = ExtResource("3_e3blm")
 autoplay = true
 

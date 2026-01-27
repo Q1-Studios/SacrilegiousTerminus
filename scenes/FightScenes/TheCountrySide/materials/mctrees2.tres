@@ -1,4 +1,4 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b32y7a4ql1syx"]
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b32y7a4ql1syx"]
 
 [ext_resource type="Texture2D" uid="uid://lihvw42vvtxp" path="res://scenes/FightScenes/TheCountrySide/mctree2.png" id="1_a1xpp"]
 

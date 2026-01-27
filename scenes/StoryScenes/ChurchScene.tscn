@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dv1unxewmnwds"]
+[gd_scene format=3 uid="uid://dv1unxewmnwds"]
 
 [ext_resource type="Texture2D" uid="uid://b3frq2g06mlbx" path="res://assets/sprites/protag/protagonist.png" id="2_ejgje"]
 [ext_resource type="Texture2D" uid="uid://bl6yt8a7nlq6h" path="res://assets/sprites/robert/priester robert.png" id="3_j18pa"]
@@ -38,16 +38,16 @@ func _on_dialog_scene_dialog_completed() -> void:
 	
 "
 
-[node name="ChurchScene" type="Node3D"]
+[node name="ChurchScene" type="Node3D" unique_id=141458146]
 script = SubResource("GDScript_e4fh0")
 
-[node name="DialogScene" parent="." instance=ExtResource("6_ppr5c")]
+[node name="DialogScene" parent="." unique_id=271483015 instance=ExtResource("6_ppr5c")]
 top_level = true
 player = ExtResource("2_ejgje")
 enemy = ExtResource("3_j18pa")
 background = ExtResource("4_1sh1p")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1367992795]
 stream = ExtResource("5_jr8gw")
 autoplay = true
 parameters/looping = true

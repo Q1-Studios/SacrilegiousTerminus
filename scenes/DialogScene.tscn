@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://dgurl1u1gb0ly"]
+[gd_scene format=3 uid="uid://dgurl1u1gb0ly"]
 
 [ext_resource type="PackedScene" uid="uid://dvygun7k256ji" path="res://scenes/HudOverlay.tscn" id="1_hnrpo"]
 
@@ -87,7 +87,7 @@ func setEnemyStartPosition(vector: Vector2) -> void:
 	ENEMY_START_POSITION = vector 		
 "
 
-[node name="DialogScene" type="Control"]
+[node name="DialogScene" type="Control" unique_id=1728985255]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -96,21 +96,21 @@ grow_horizontal = 2
 grow_vertical = 2
 script = SubResource("GDScript_3k0fr")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1081803334]
 
-[node name="PlayerSprite" type="Sprite2D" parent="CanvasLayer"]
+[node name="PlayerSprite" type="Sprite2D" parent="CanvasLayer" unique_id=1952034608]
 z_index = 1
 position = Vector2(-650, 1230)
 
-[node name="EnemySprite" type="Sprite2D" parent="CanvasLayer"]
+[node name="EnemySprite" type="Sprite2D" parent="CanvasLayer" unique_id=1507370235]
 z_index = 1
 position = Vector2(2500, 1230)
 
-[node name="BackgroundSprite" type="Sprite2D" parent="CanvasLayer"]
+[node name="BackgroundSprite" type="Sprite2D" parent="CanvasLayer" unique_id=8969645]
 z_index = -1
 position = Vector2(960, 540)
 
-[node name="HudOverlay" parent="." instance=ExtResource("1_hnrpo")]
+[node name="HudOverlay" parent="." unique_id=1162562256 instance=ExtResource("1_hnrpo")]
 z_index = 10
 layout_mode = 1
 

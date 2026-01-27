@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://8gpddvo73c18"]
+[gd_scene format=3 uid="uid://8gpddvo73c18"]
 
 [ext_resource type="PackedScene" uid="uid://ccelpifkgb5xq" path="res://scenes/SpellCastWheel/SpellCastWheel.tscn" id="1_p0fva"]
 [ext_resource type="Script" uid="uid://bonkrt4wx7shd" path="res://code/game_manager.gd" id="2_j851o"]
@@ -18,41 +18,41 @@ func getTimeFromTimer() -> Array:
 	return [minute, second]
 "
 
-[node name="root" type="Node3D"]
+[node name="root" type="Node3D" unique_id=975141084]
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="Camera3D" type="Camera3D" parent="." unique_id=552736617]
 transform = Transform3D(1, 0, 0, 0, 0.948035, 0.318165, 0, -0.318165, 0.948035, 0, 1.61999, 2.42331)
 fov = 50.3224
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=457872900]
 transform = Transform3D(6.204, 0, 0, 0, 6.367, 0, 0, 0, 2.118, 0.0552581, -2.00816, -5.31954)
 texture = ExtResource("2_xgapr")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=669565214]
 
-[node name="GameManager" type="Node3D" parent="."]
+[node name="GameManager" type="Node3D" parent="." unique_id=1421532667]
 script = ExtResource("2_j851o")
 
-[node name="roundManager" type="Node3D" parent="GameManager" node_paths=PackedStringArray("playerWheel", "opponentWheel")]
+[node name="roundManager" type="Node3D" parent="GameManager" unique_id=1723762206 node_paths=PackedStringArray("playerWheel", "opponentWheel")]
 script = ExtResource("2_lq0ph")
 playerWheel = NodePath("ManualWheel")
 opponentWheel = NodePath("AutomaticWheel")
 hasProgressBar = true
 timeForRoud = 20
 
-[node name="AutomaticWheel" parent="GameManager/roundManager" instance=ExtResource("3_knfil")]
+[node name="AutomaticWheel" parent="GameManager/roundManager" unique_id=1784835706 instance=ExtResource("3_knfil")]
 transform = Transform3D(1, 0, 0, 0, 0.414693, -0.909961, 0, 0.909961, 0.414693, 1.208, 0.53, -1.245)
 
-[node name="ManualWheel" parent="GameManager/roundManager" instance=ExtResource("1_p0fva")]
+[node name="ManualWheel" parent="GameManager/roundManager" unique_id=187007588 instance=ExtResource("1_p0fva")]
 transform = Transform3D(1, 0, 0, 0, 0.614285, -0.789084, 0, 0.789084, 0.614285, -1.43457, 0.316572, -1.57377)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="GameManager"]
+[node name="CanvasLayer" type="CanvasLayer" parent="GameManager" unique_id=635787086]
 
-[node name="Timer" type="Timer" parent="GameManager/CanvasLayer"]
+[node name="Timer" type="Timer" parent="GameManager/CanvasLayer" unique_id=404808060]
 one_shot = true
 script = SubResource("GDScript_3kbci")
 
-[node name="HudOverlay" parent="." instance=ExtResource("6_pse0m")]
+[node name="HudOverlay" parent="." unique_id=386258897 instance=ExtResource("6_pse0m")]
 
 [connection signal="updateTheFinalCountdown" from="GameManager" to="HudOverlay" method="_on_game_manager_update_the_final_countdown"]
 [connection signal="playerWon" from="GameManager/roundManager" to="GameManager" method="_on_round_manager_player_won"]

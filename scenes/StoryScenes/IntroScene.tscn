@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bsle2e6xv3vdw"]
+[gd_scene format=3 uid="uid://bsle2e6xv3vdw"]
 
 [ext_resource type="PackedScene" uid="uid://dvygun7k256ji" path="res://scenes/HudOverlay.tscn" id="1_rqdsk"]
 [ext_resource type="AudioStream" uid="uid://2pf5cga2akch" path="res://assets/music/loading_loop.ogg" id="2_kbhhq"]
@@ -33,12 +33,12 @@ func _on_hud_overlay_dialog_completed() -> void:
 	SceneManager.change_scene(SceneManager.churchCutSceneTillDeathHelpMePls, true)
 "
 
-[node name="IntroScene" type="Node3D"]
+[node name="IntroScene" type="Node3D" unique_id=41313885]
 script = SubResource("GDScript_s0c5o")
 
-[node name="HudOverlay" parent="." instance=ExtResource("1_rqdsk")]
+[node name="HudOverlay" parent="." unique_id=522981682 instance=ExtResource("1_rqdsk")]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1562944932]
 stream = ExtResource("2_kbhhq")
 volume_db = -5.0
 autoplay = true

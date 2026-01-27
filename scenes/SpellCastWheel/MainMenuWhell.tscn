@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://ceft1i1qvo4fl"]
+[gd_scene format=3 uid="uid://ceft1i1qvo4fl"]
 
 [ext_resource type="Texture2D" uid="uid://ccl2sq1tsjiq8" path="res://assets/UI/Credits.png" id="3_quyjc"]
 [ext_resource type="Texture2D" uid="uid://cod5k6h5q11rd" path="res://assets/UI/circle.png" id="4_fd50j"]
@@ -98,81 +98,81 @@ func mod(a: int, b:int) -> int:
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wcs1u"]
 albedo_texture = ExtResource("3_quyjc")
 
-[node name="ManualWheel" type="Node3D" node_paths=PackedStringArray("innerRing", "touch")]
+[node name="ManualWheel" type="Node3D" unique_id=1619815037 node_paths=PackedStringArray("innerRing", "touch")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0096097, 0, 0.0048047)
 script = SubResource("GDScript_5rwoc")
 innerRing = NodePath("Wheel/3")
 touch = NodePath("TouchInputHandler")
 
-[node name="Wheel" type="Node3D" parent="."]
+[node name="Wheel" type="Node3D" parent="." unique_id=1895370840]
 
-[node name="3" type="Node3D" parent="Wheel" node_paths=PackedStringArray("particle")]
+[node name="3" type="Node3D" parent="Wheel" unique_id=1945671520 node_paths=PackedStringArray("particle")]
 script = ExtResource("4_rik2f")
 segmentCount = 4
 particle = NodePath("Particles")
 
-[node name="Sprite3D" type="Sprite3D" parent="Wheel/3"]
+[node name="Sprite3D" type="Sprite3D" parent="Wheel/3" unique_id=193423169]
 transform = Transform3D(0.22, -0.000245742, -1.95668e-07, -1.95678e-07, -9.51209e-09, -0.22, 0.000245742, 0.22, -9.72092e-09, 0, 0, 0)
 modulate = Color(1, 0.313726, 0.223529, 1)
 texture = ExtResource("4_fd50j")
 
-[node name="w" type="Sprite3D" parent="Wheel/3"]
+[node name="w" type="Sprite3D" parent="Wheel/3" unique_id=1699717944]
 transform = Transform3D(0.161233, 3.93965e-05, 3.13687e-08, 3.13705e-08, -7.04005e-09, -0.161233, -3.93965e-05, 0.161233, -7.05535e-09, 0, 0, 0)
 modulate = Color(1, 0.313726, 0.223529, 1)
 texture = ExtResource("4_fd50j")
 
-[node name="Sprite3D3" type="Sprite3D" parent="Wheel/3"]
+[node name="Sprite3D3" type="Sprite3D" parent="Wheel/3" unique_id=964296399]
 transform = Transform3D(-0.0423522, -0.10152, 4.43757e-09, 3.97047e-23, -4.80825e-09, -0.11, 0.10152, -0.0423522, 1.85128e-09, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_wcs1u")
 modulate = Color(1, 0.313726, 0.223529, 1)
 texture = ExtResource("5_q07ao")
 
-[node name="Particles" parent="Wheel/3" instance=ExtResource("6_cgca7")]
+[node name="Particles" parent="Wheel/3" unique_id=238015705 instance=ExtResource("6_cgca7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.41112, 0, 0.970702)
 mass = 0.001
 gravity_scale = 0.0
 
-[node name="WheelSpinAudioPlayer" type="AudioStreamPlayer" parent="Wheel/3"]
+[node name="WheelSpinAudioPlayer" type="AudioStreamPlayer" parent="Wheel/3" unique_id=125329979]
 stream = ExtResource("8_qmpg1")
 
-[node name="Play" type="Node3D" parent="Wheel/3"]
+[node name="Play" type="Node3D" parent="Wheel/3" unique_id=366721515]
 
-[node name="Play" type="Sprite3D" parent="Wheel/3/Play"]
+[node name="Play" type="Sprite3D" parent="Wheel/3/Play" unique_id=258470491]
 transform = Transform3D(0.025, 0, 0, 0, -1.09278e-09, 0.02, 0, -0.025, -8.74228e-10, 0, 0, 0.789066)
 modulate = Color(1, 0.314748, 0.224306, 1)
 pixel_size = 0.02
 texture = ExtResource("6_vf6fn")
 
-[node name="Credits" type="Node3D" parent="Wheel/3"]
+[node name="Credits" type="Node3D" parent="Wheel/3" unique_id=987860561]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
 
-[node name="Play" type="Sprite3D" parent="Wheel/3/Credits"]
+[node name="Play" type="Sprite3D" parent="Wheel/3/Credits" unique_id=2062159633]
 transform = Transform3D(0.029, 0, 0, 0, -1.26763e-09, 0.024, 0, -0.029, -1.04907e-09, 0, 0, 0.789066)
 modulate = Color(1, 0.314748, 0.224306, 1)
 pixel_size = 0.02
 texture = ExtResource("3_quyjc")
 
-[node name="Tutorial" type="Node3D" parent="Wheel/3"]
+[node name="Tutorial" type="Node3D" parent="Wheel/3" unique_id=153907710]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
 
-[node name="Play" type="Sprite3D" parent="Wheel/3/Tutorial"]
+[node name="Play" type="Sprite3D" parent="Wheel/3/Tutorial" unique_id=2026299857]
 transform = Transform3D(0.029, 0, 0, 0, -1.26763e-09, 0.023, 0, -0.029, -1.00536e-09, 0, 0, 0.789066)
 modulate = Color(1, 0.314748, 0.224306, 1)
 pixel_size = 0.02
 texture = ExtResource("8_5cio3")
 
-[node name="Quit" type="Node3D" parent="Wheel/3"]
+[node name="Quit" type="Node3D" parent="Wheel/3" unique_id=357492573]
 transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, 0)
 
-[node name="Play" type="Sprite3D" parent="Wheel/3/Quit"]
+[node name="Play" type="Sprite3D" parent="Wheel/3/Quit" unique_id=70310444]
 transform = Transform3D(0.025, 0, 0, 0, -1.09278e-09, 0.02, 0, -0.025, -8.74228e-10, 0, 0, 0.789066)
 modulate = Color(1, 0.314748, 0.224306, 1)
 pixel_size = 0.02
 texture = ExtResource("7_8pqsf")
 
-[node name="Sprite3D" type="Sprite3D" parent="Wheel"]
+[node name="Sprite3D" type="Sprite3D" parent="Wheel" unique_id=1154884067]
 transform = Transform3D(-0.119843, 0.00613809, -2.68305e-10, 0, -5.24537e-09, -0.12, -0.00613809, -0.119843, 5.2385e-09, 0, 0, 0)
 modulate = Color(1, 0.313726, 0.223529, 1)
 texture = ExtResource("5_q07ao")
 
-[node name="TouchInputHandler" parent="." instance=ExtResource("10_5vc8e")]
+[node name="TouchInputHandler" parent="." unique_id=1212417161 instance=ExtResource("10_5vc8e")]
