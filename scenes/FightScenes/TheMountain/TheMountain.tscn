@@ -809,7 +809,7 @@ _data = {
 script = SubResource("GDScript_yrvts")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=882196860]
-transform = Transform3D(0.94028795, -0.04148186, -0.33784276, 0, 0.99254584, -0.12186925, 0.34038, 0.114592195, 0.9332788, 0.23, 0.415, -0.435)
+transform = Transform3D(0.94028795, -0.041481856, -0.33784273, 0, 0.9925458, -0.12186924, 0.34038, 0.11459219, 0.93327874, 0.23, 0.415, -0.435)
 fov = 50.0
 
 [node name="WhooshSFX" type="AudioStreamPlayer" parent="Camera3D" unique_id=990564527]

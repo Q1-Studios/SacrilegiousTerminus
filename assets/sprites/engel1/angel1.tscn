@@ -185,7 +185,7 @@ mesh = ExtResource("1_0vq5b")
 surface_material_override/0 = ExtResource("2_c0l4j")
 
 [node name="Michi2" type="MeshInstance3D" parent="Michi" unique_id=39117204]
-transform = Transform3D(0.8658159, 2.1871589e-08, 0.5003631, -2.1871605e-08, 1, -5.8653713e-09, -0.5003631, -5.86541e-09, 0.8658159, -0.502689, -0.149177, -0.28435)
+transform = Transform3D(0.8658158, 2.1871589e-08, 0.50036305, -2.1871601e-08, 1, -5.865371e-09, -0.50036305, -5.86541e-09, 0.8658158, -0.502689, -0.149177, -0.28435)
 mesh = ExtResource("1_0vq5b")
 skeleton = NodePath("../..")
 surface_material_override/0 = ExtResource("3_2gjwf")
